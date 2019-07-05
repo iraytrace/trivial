@@ -17,7 +17,9 @@ pipeline {
 		}
 */
 		stage ('Archive') {
+			steps {
 			archive 'ProjectName/bin/Release/**'
+			}
 		}
 	}
 
