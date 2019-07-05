@@ -14,10 +14,10 @@ pipeline {
 
 		stage ('Archive') {
 			steps {
-/* 				zip zipFile: ConsoleApp1.zip, archive: false, glob: 'ConsoleApp1/bin/Release/**'
-				archiveArtifacts artifacts: 'ConsoleApp1.zip'  */
+ 				zip zipFile: ConsoleApp1.zip, archive: false, glob: 'ConsoleApp1/bin/**'
+				archiveArtifacts artifacts: 'ConsoleApp1.zip'
 //				archiveArtifacts artifacts: 'ConsoleApp1/bin/Release/**'
-				archiveArtifacts artifacts: 'ConsoleApp1/bin/**'
+//				archiveArtifacts artifacts: 'ConsoleApp1/bin/**'
 			}
 		}
 	}
